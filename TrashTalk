@@ -15,5 +15,5 @@ mouse.KeyDown:connect(function(key)
     else 
         toggle = false
         dahubspamTrash = false
-	end
+    end
 end)
