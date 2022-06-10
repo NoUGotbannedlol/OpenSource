@@ -9,7 +9,7 @@ end)
 local lol = TrashTalkBind:lower()
 local mouse = game.Players.LocalPlayer:GetMouse()
 mouse.KeyDown:connect(function(key)
-	if key == lol and toggle == false then
+    if key == lol and toggle == false then
 		toggle = true 
         dahubspamTrash = true
     else 
