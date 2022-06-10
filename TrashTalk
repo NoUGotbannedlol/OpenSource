@@ -6,7 +6,7 @@ spawn(function()
         end
     end 
 end)
-local lol = TrashTalkBind:lower()
+local lol = TrashTalkBind
 local mouse = game.Players.LocalPlayer:GetMouse()
 mouse.KeyDown:connect(function(key)
     if key == lol and toggle == false then
