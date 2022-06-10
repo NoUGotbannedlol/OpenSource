@@ -1,0 +1,19 @@
+spawn(function()
+    while wait() do
+        if dahubspamTrash == true then
+            local random = Trash[math.random(1, #Trash)]
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(random, "All")
+        end
+    end 
+end)
+
+local mouse = game.Players.LocalPlayer:GetMouse()
+mouse.KeyDown:connect(function(key)
+	if key == TrashTalkBind and toggle == false then
+		toggle = true 
+        dahubspamTrash = true
+    else 
+        toggle = false
+        dahubspamTrash = false
+	end
+end)
